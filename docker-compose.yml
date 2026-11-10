@@ -1,0 +1,9 @@
+services:
+  atlas-landing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: atlas-landing
+    restart: unless-stopped
+    ports:
+      - "8080:80"
